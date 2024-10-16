@@ -1,93 +1,32 @@
-# Angular Crud exercise (0.1.0)
-##### Made with last version of Angular
+# CRUD-A
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version **18.0.1.**
+![CRUD-A Logo](https://crud-a-ebon.vercel.app/logo.png) <!-- Reemplaza esto con la URL de tu logo -->
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you
-change any of the source files.
+CRUD-A es una aplicación web diseñada para gestionar operaciones de Crear, Leer, Actualizar y Eliminar (CRUD) de manera sencilla y eficiente. La aplicación proporciona una interfaz de usuario intuitiva y permite a los usuarios gestionar datos de manera eficaz.
 
+## Características
 
-## Screenshots
-<details>
-<summary>Screens and Swagger</summary>
+- **Interfaz de usuario interactiva**: Disfruta de una experiencia de usuario fluida y fácil de navegar.
+- **Operaciones CRUD**: Realiza todas las operaciones necesarias para gestionar tus datos.
+- **Autenticación**: Ingreso seguro a la aplicación.
+- **Despliegue en Vercel**: Acceso rápido y fácil a la aplicación en línea.
 
-- 🤡 Empty list if you don't run the server, but before read the instructions.
+## Enlace en vivo
 
-![empty.png](public/assets/images/empty_list_big.png)
+Puedes ver la aplicación en funcionamiento en el siguiente enlace: [CRUD-A en Vercel](https://crud-a-ebon.vercel.app/login)
 
-Dark app theme (I know is terrible huauhahu UI)
-![screen_dark.png](public/assets/images/screen_fe_dark.png)
+## Tecnologías utilizadas
 
-Swagger present on endpoint `api-docs`
-![swagger.png](public/assets/images/swagger.png)
+- **Frontend**: [React](https://reactjs.org/) 
+- **Backend**: [Node.js](https://nodejs.org/) 
+- **Base de datos**: [MongoDB](https://www.mongodb.com/) 
 
-</details>
+## Instalación
 
-## Mongo instructions
+Para instalar el proyecto localmente, sigue estos pasos:
 
-If you want to use this server, you have look inside models: 
-
-👉🏻 `server/models/*.js`
-
-After creating models in your mongoDb instance.
-Set the correct name of db through the `.env` file.
-
-and the secret key for the jwt token.
-
-```dotenv
-DATABASE_URL=
-DATABASE_PORT=
-DATABASE_NAME=
-SECRET_KEY=
-```
-
-You can rename `.env_sample` to `.env` and set the correct values.
-
-Run `npm run server:start` to start the server.
- 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use
-`ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## TODO
-
-- [x] Add filter for user articles
-- [x] Add paginator on article-list
-- [x] Add a better error handling
-- [ ] Add test for the app 
-- [x] Add CRUD for user (admin section)
-- [x] Improve user session and model management
-- [x] Add admin section for handling users and articles
-- [ ] Add refresh token and retrieve password (EXTRA FEATURES)
- 
-
-## Author
-🥷🏻 alBz
-
-
-## Docker commands
-Run `docker build -t my_angular_app:latest .`
-
-and
-
-`docker run -d -p 4200:80 my_angular_app` 
-
-you can access to the app on `http://localhost:4200`
-
-## License
-
-This project is licensed under the MIT License 
-
-## Hint 
-You can use this project as a template for your own Angular projects or for prepare a technical interview.
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Josefo22/CRUD-A.git
