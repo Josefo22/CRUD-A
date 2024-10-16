@@ -1,0 +1,60 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  setup:
+    name: Set up Environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Cache Node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ github.repository }}
+          restore-keys: |
+            ${{ runner.os }}-node-${{ github.repository }}
+            ${{ runner.os }}-node-
+
+  lint:
+    name: Linting source code
+    runs-on: macos-latest
+    needs: setup
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Cached Node modules
+        run: npm install
+
+      - name: Run Linter
+        run: npm run lint
+
+  test:
+    name: Run Tests
+    runs-on: macos-latest
+    needs: setup
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Use Cached Node modules
+        run: npm install
+
+      - name: Run Tests
+        run: npm run test
