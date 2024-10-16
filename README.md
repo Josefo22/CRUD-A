@@ -1,6 +1,6 @@
 # CRUD-A
 
-![CRUD-A Logo](https://crud-a-ebon.vercel.app/logo.png) <!-- Reemplaza esto con la URL de tu logo -->
+![CRUD-A Logo](no-te-rindas.png) <!-- Reemplaza esto con la URL de tu logo -->
 
 ## Descripción
 
