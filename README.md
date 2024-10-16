@@ -1,6 +1,6 @@
 # CRUD-A
 
-![CRUD-A Logo](no-te-rindas.png) <!-- Reemplaza esto con la URL de tu logo -->
+<img src="no-te-rindas.png" alt="CRUD-A Logo" width="150"/> <!-- Ajusta el ancho según sea necesario -->
 
 ## Descripción
 
@@ -19,9 +19,11 @@ Puedes ver la aplicación en funcionamiento en el siguiente enlace: [CRUD-A en V
 
 ## Tecnologías utilizadas
 
-- **Frontend**: [React](https://reactjs.org/) 
-- **Backend**: [Node.js](https://nodejs.org/) 
-- **Base de datos**: [MongoDB](https://www.mongodb.com/) 
+- **TypeScript**: 54.8%
+- **JavaScript**: 27.0%
+- **HTML**: 16.4%
+- **SCSS**: 1.6%
+- **Dockerfile**: 0.2%
 
 ## Instalación
 
